@@ -14,7 +14,7 @@ Role Variables
 --------------
 
 | Name           | Default | Description                  |
-|----------------|---------|------------------------------|
+|:---------------|:--------|:-----------------------------|
 | erlang_version | 18.3    | Version of Erlang to install |
 
 Dependencies
@@ -25,7 +25,7 @@ None
 Example Playbook
 ----------------
 
-```
+```yaml
 - hosts: all
   roles:
     - kbrebanov.erlang
