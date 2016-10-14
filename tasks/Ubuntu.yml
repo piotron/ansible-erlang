@@ -12,7 +12,7 @@
 - name: Add Erlang Solutions repository
   become: yes
   apt_repository:
-    repo: 'deb http://packages.erlang-solutions.com/ubuntu trusty contrib'
+    repo: 'deb http://packages.erlang-solutions.com/ubuntu {{ ansible_distribution_release|lower }} contrib'
     state: present
   tags:
     - erlang
