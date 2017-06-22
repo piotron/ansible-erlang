@@ -15,7 +15,7 @@ Role Variables
 
 | Name           | Default | Description                  |
 |:---------------|:--------|:-----------------------------|
-| erlang_version | 19.1.3  | Version of Erlang to install |
+| erlang_version | 20.0    | Version of Erlang to install |
 
 Dependencies
 ------------
