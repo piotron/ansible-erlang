@@ -16,7 +16,7 @@
   tags:
     - erlang
 
-- include: Ubuntu.yml
+- include: Debian.yml
   when: ansible_distribution == "Debian"
   tags:
     - erlang
