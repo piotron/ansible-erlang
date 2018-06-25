@@ -17,12 +17,28 @@
   tags:
     - erlang
 
+- name: Unhold erlang packages
+  command: 'apt-mark unhold esl-erlang"
+  become: true
+  become_user: root
+  tags:
+    - erlang
+
+
 - name: Install Erlang packages
   become: yes
   apt:
     name: "{{ item }}"
     state: present
     update_cache: yes
+  with_items:
+    - "{{ erlang_packages }}"
+  tags:
+    - erlang
+
+- name: Hold Erlang packages
+  become: yes
+  command: "apt-mark hold {{ item }}
   with_items:
     - "{{ erlang_packages }}"
   tags:
