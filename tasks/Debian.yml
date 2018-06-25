@@ -38,7 +38,7 @@
 
 - name: Hold Erlang packages
   become: yes
-  command: "apt-mark hold {{ item }}
+  command: "apt-mark hold {{ item }}"
   with_items:
     - "{{ erlang_packages }}"
   tags:
