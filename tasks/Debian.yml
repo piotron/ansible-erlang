@@ -31,6 +31,7 @@
     name: "{{ item }}"
     state: present
     update_cache: yes
+    force: yes
   with_items:
     - "{{ erlang_packages }}"
   tags:
